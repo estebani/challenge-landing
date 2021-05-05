@@ -1,0 +1,8 @@
+.container-padding { 
+    padding: 20vh 15vw;
+}
+.custom_button{
+    border-radius: 10px;
+    background-color: #00d3b5;
+    color:white
+}
