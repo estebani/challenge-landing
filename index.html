@@ -11,6 +11,9 @@
     <meta http-equiv="cache-control" content="no-cache" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,700&family=Open+Sans&display=swap"
+        rel="stylesheet">
     <link href="./public/css/index.css" rel="stylesheet">
     
 
@@ -18,9 +21,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Fourth navbar example">
+        <nav class="navbar navbar-expand-md navbar-light bg-light custom_link" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand mr-0 mr-md-2 d-xs-block d-md-none" href="#">LanderZ</a>
+                <span class="navbar-brand mr-0 mr-md-2 d-xs-block d-md-none text_font_bold_2" href="#">LanderZ</span>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -29,35 +32,35 @@
                 <div class="navbar-collapse collapse" id="navbarsExample04" style="">
                     <ul class="navbar-nav me-auto mb-2 mb-xs-0 mx-auto">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link active" href="#">Home</a>
+                            <a href="#home" class="nav-link custom_link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#features" class="nav-link" href="#">Feature</a>
+                            <a href="#features" class="nav-link custom_link" href="#">Feature</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link" href="#">About Us</a>
+                            <a href="#about" class="nav-link custom_link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#testimonial" class="nav-link" href="#">Testimonials</a>
+                            <a href="#testimonial" class="nav-link custom_link" href="#">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#blog" class="nav-link" href="#">Blog</a>
+                            <a href="#blog" class="nav-link custom_link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link" href="#">Contact</a>
+                            <a href="#contact" class="nav-link custom_link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <a class="navbar-brand mr-0 mr-md-2 d-none d-sm-none d-md-block text-center" href="#">LanderZ</a>
+        <span class="navbar-brand mr-0 mr-md-2 d-none d-sm-none d-md-block text-center text_font_bold_2" href="#">LanderZ</span>
     </header>
     <main>
         <article id="home" class="row container-padding">
             <section class="col-md-4 pe-1 order-2 order-xs-2">
-                <h1>Grow Your Business Faster</h1>
+                <h1 class="text_font_bold">Grow Your Business Faster</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia</p>
-                <button type="button" class="btn custom_button">Get Started</button>
+                <button type="button" class="btn custom_button custom_button_large">Get Started</button>
             </section>
             <section class="col-md-6 offset-md-2  order-md-2">
                 <figure class="figure">
@@ -67,41 +70,88 @@
                 </figure>
             </section>
         </article>
-        <article>
-            <h1>Features</h1>
-            <section id="features">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <article id="features" class="row container-padding">
+            <h1 class="text-center">Features</h1>
+            <section >
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <span class="custom_button icon-refresh"></span>
+                                <h5 class="card-title my-3">Business Consulting</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicingelit. Perferendis quis molestiae vitae eligendi at.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <span class="custom_button icon-store_mall_directory"></span>
+                                <h5 class="card-title my-3">Market Analysis</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicingelit. Perferendis quis molestiae vitae eligendi at.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <span class="custom_button icon-shopping_basket"></span>
+                                <h5 class="card-title my-3">User Monitoring</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicingelit. Perferendis quis molestiae vitae eligendi at.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-2">
+                            <div class="card-body">
+                            <span class="custom_button icon-settings_backup_restore"></span>
+                                <h5 class="card-title my-3">Insurance Consulting</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicingelit. Perferendis quis molestiae vitae eligendi at.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-2">
+                            <div class="card-body">
+                            <span class="custom_button icon-sentiment_satisfied"></span>
+                                <h5 class="card-title my-3">Customer Satisfied</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicingelit. Perferendis quis molestiae vitae eligendi at.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-2">
+                            <div class="card-body">
+                            <span class="custom_button icon-power"></span>
+                                <h5 class="card-title my-3">Plug & Play</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicingelit. Perferendis quis molestiae vitae eligendi at.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <h1>sec 2.1</h1>
             </section>
         </article>
-        <article>
+        <article id="about">
             <h1>About Us</h1>
-            <section id="about">
+            <section >
                 <h1>sec 3.1</h1>
             </section>
         </article>
-        <article>
+        <article id="testimonials">
             <h1>Testimonials</h1>
-            <section id="testimonials">
+            <section >
                 <h1>sec 3.1</h1>
             </section>
         </article>
-        <article>
+        <article id="blog">
             <h1>Blog</h1>
-            <section id="blog">
+            <section >
                 <h1>sec 3.1</h1>
             </section>
         </article>
-        <article>
+        <article id="contact">
             <h1>Contact</h1>
-            <section id="contact">
+            <section >
                 <h1>sec 3.1</h1>
             </section>
         </article>
