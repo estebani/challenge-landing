@@ -86,6 +86,17 @@ blockquote{
     list-style: none;
 } 
 
+.font_24{
+    font-size: 24px !important;
+}
+.font_16{
+    font-size: 16px !important;
+}
+
+.slide_testimonial{
+    width: 100%;
+    min-height: 310px;
+}
 
 @font-face {
     font-family: 'icomoon';
