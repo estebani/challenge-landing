@@ -32,4 +32,22 @@ const getRandomElments = function (InitialArray, amountElms) {
     return InitialArray.sort(() => Math.random() - Math.random()).slice(0, amountElms)
 }
 
-export { getData, getPosts, makeSlide, getRandomElments };
+const createTemplate = function (slide, idx) {
+    return `<div class="carousel-item ${idx == 0 ? 'active' : null}" data-bs-interval="100000000" data-bs-ride="false">
+            <div class="slide_testimonial">
+                <div class="carousel-caption d-none d-md-block">
+                        <figure class="figure row ">
+                            <img src="${slide.userImage}"
+                                class="figure-img img-fluid rounded figure_card mx-auto" alt="${slide.post.title}">
+                        </figure>
+                        <div class="row">
+                            <p class="text_grey font_big">${slide.post.body}</p>
+                            <p class="my-0 text_font_bold_2 font_small mb-3">${slide.name}</p>
+                        </div>
+
+                </div>
+            </div>
+        </div>`;
+}
+
+export { getData, getPosts, makeSlide, getRandomElments, createTemplate };

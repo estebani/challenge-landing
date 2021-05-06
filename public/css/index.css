@@ -86,16 +86,32 @@ blockquote{
     list-style: none;
 } 
 
-.font_24{
-    font-size: 24px !important;
+.font_big{
+    font-size: 20px !important;
 }
-.font_16{
-    font-size: 16px !important;
+.font_small{
+    font-size: 14px !important;
 }
-
+#testimonials_contain{
+    overflow: visible !important;
+}
 .slide_testimonial{
     width: 100%;
-    min-height: 310px;
+    min-height: 268px;
+}
+
+.button_slide.active{
+    background-color: #00d3b5 !important;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.button_slide{
+    background-color: grey !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
 }
 
 @font-face {

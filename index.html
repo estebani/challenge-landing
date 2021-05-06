@@ -186,41 +186,18 @@
             <section class="row">
                 <div id="carousel-testimonials" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel-testimonials" data-bs-slide-to="0" class="active"
+                        <button type="button" class="button_slide active" data-bs-target="#carousel-testimonials" data-bs-slide-to="0" 
                             aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel-testimonials" data-bs-slide-to="1"
+                        <button type="button" class="button_slide" data-bs-target="#carousel-testimonials" data-bs-slide-to="1" 
                             aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel-testimonials" data-bs-slide-to="2"
+                        <button type="button" class="button_slide" data-bs-target="#carousel-testimonials" data-bs-slide-to="2" 
                             aria-label="Slide 3"></button>
+                        <button type="button" class="button_slide" data-bs-target="#carousel-testimonials" data-bs-slide-to="3" 
+                            aria-label="Slide 4"></button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="slide_testimonial">
-                            <div class="carousel-caption d-none d-md-block">
-                                <section class="text-justify">
-                                    <figure class="figure row " >
-                                        <img src="./public/assets/images/person_1.jpg" class="figure-img img-fluid rounded figure_card mx-auto"
-                                            alt="Photography of Amalia G">
-                                    </figure>
-                                    <div class="row">
-                                        <p class="text_grey font_24">Eos cumque optio dolores excepturi rerum temporibus magni recusandae evenit, totam omnis consectectur maxime quibusdam
-                                        expedita dolorem dolor nobis dicta labore quaeret esse magnam unde</p>
-                                        <p class="my-0 text_font_bold_2 font_16">Amalia G.</p>
-                                    </div>
-                                </section>
-                            </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+
+                    <div class="carousel-inner" id="testimonials_contain"></div>
+                    
                 </div>
             </section>
         </article>
