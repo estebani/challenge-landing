@@ -1,5 +1,5 @@
 .container-padding { 
-    padding: 20vh 15vw;
+    padding: 20vh 12vw;
 }
 .custom_button{
     border-radius: 25px;
@@ -10,7 +10,10 @@
     padding: 8px;
     font-size: 24px;
     display: block;
-    box-shadow: 5px 1px 15px -8px #00d3b5;
+    box-shadow: 5px 1px 13px -8px #00d3b5;
+}
+.custom_button_large:hover{
+    color:white;
 }
 
 .custom_button_large {
@@ -30,6 +33,59 @@
 .custom_link{
     color:black !important;
 }
+
+.article_title{
+    margin-bottom: 20vh;
+}
+
+main article:nth-child(2n+1) {
+
+    background: white;
+}
+main article:nth-child(2n) {
+    background: #f6f6f6;
+}
+
+#navBarContain{
+    box-shadow: 0px 2px 20px -16px rgb(0 0 0 / 67%);
+}
+.link_learn_more{
+    color:#00d3b5;
+    text-decoration: none;
+}
+
+a.link_learn_more:active, .link_learn_more:hover{
+    color:#00d3b5;
+    text-decoration:underline;
+}
+
+.figure_card{
+    width: 80px;
+    border-radius: 50%!important;
+
+}
+.card_quote{
+    -webkit-box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
+}
+.text_grey{
+    color:grey;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+.list_check:before { 
+    content: '\2713'; margin-left: -20px; margin-right: 10px; 
+    color: #93c951;
+    font-size: 20px;
+} 
+.list_check { 
+    list-style: none;
+} 
+
 
 @font-face {
     font-family: 'icomoon';
@@ -74,4 +130,7 @@
 }
 .icon-power:before {
     content: "\e63c";
+}
+.icon-check:before {
+    content: "\f00c";
 }
