@@ -1,17 +1,18 @@
 'use strict'
 
 
-import { URL_USERS } from './const.js';
-import { getRandomElments } from './utils.js';
-import { getData, getPosts } from './webservices.js';
+import { Util } from './utils.js';
+import { getPosts, getUsers } from './webservices.js';
 import { createTemplate } from './views.js';
 
 const buildTestimonials = async function(){
     try {
-        const users = await getData(URL_USERS);
-        const usersRandom = getRandomElments(users, 4);
-        const slides = await getPosts(usersRandom);
-        const templates = slides.map(createTemplate)
+        const util = new Util();
+        const users = await getUsers();
+        const usersRandom = util.getRandomElments(users, 4);
+        const posts = await getPosts(usersRandom);
+        const slides = posts.map(util.makeSlide);
+        const templates = slides.map(createTemplate);
         const testimonials_contain = document.getElementById('testimonials_contain');
         testimonials_contain.innerHTML = templates.join(' ');
     } catch (error) {
@@ -28,7 +29,6 @@ const checkFormContact = function(){
                     event.preventDefault()
                     event.stopPropagation()
                 }
-
                 form.classList.add('was-validated')
             }, false)
         })
