@@ -1,9 +1,10 @@
 'use strict'
 
 
-import { URL_USERS, URL_POSTS, ARRAY_PICTURES } from './const.js';
-import { getData, getPosts, makeSlide, getRandomElments, createTemplate } from './utils.js';
-
+import { URL_USERS } from './const.js';
+import { getRandomElments } from './utils.js';
+import { getData, getPosts } from './webservices.js';
+import { createTemplate } from './views.js';
 
 
 
