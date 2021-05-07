@@ -15,45 +15,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,700&family=Open+Sans&display=swap"
         rel="stylesheet">
     <link href="./public/css/index.css" rel="stylesheet">
+    <link rel="shortcut icon" href="#">
     
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light custom_link" id="nav_bar_contain" aria-label="Fourth navbar example">
+        <nav class="navbar navbar-expand-md navbar-light bg-light text_black" id="nav_bar_contain" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <span class="navbar-brand mr-0 mr-md-2 d-xs-block d-md-none text_font_bold_2" href="#">LanderZ</span>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navBarMain" aria-controls="navBarMain" aria-expanded="false"
+                <h2 class="mr-0 mr-md-2 d-xs-block d-md-none fw-bold" href="#">Landerz<span id="dot_blue">.</span></h2>
+                <button id="button_nav_bar" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#nav_bar_main" aria-controls="nav_bar_main" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-bars"></span>
+                    
                 </button>
-                <div class="navbar-collapse collapse" id="navBarMain" style="">
+                <div class="navbar-collapse collapse" id="nav_bar_main" style="">
                     <ul class="navbar-nav me-auto mb-2 mb-xs-0 mx-auto">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link custom_link" href="#">Home</a>
+                            <a href="#home" class="nav-link mx-2 text_black" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#features" class="nav-link custom_link" href="#">Feature</a>
+                            <a href="#features" class="nav-link mx-2 text_black" href="#">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link custom_link" href="#">About Us</a>
+                            <a href="#about" class="nav-link mx-2 text_black" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#testimonial" class="nav-link custom_link" href="#">Testimonials</a>
+                            <a href="#testimonial" class="nav-link mx-2 text_black" href="#">Testimonials</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#blog" class="nav-link custom_link" href="#">Blog</a>
+                            <a href="#blog" class="nav-link mx-2 text_black" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link custom_link" href="#">Contact</a>
+                            <a href="#contact" class="nav-link mx-2 text_black" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <span class="navbar-brand mr-0 mr-md-2 d-none d-sm-none d-md-block text-center text_font_bold_2" href="#">LanderZ<span style="color:#00d3b5">.</span></span>
+        <h3 class="mr-0 mr-md-2 d-none d-sm-none d-md-block text-center fw-bold mt-1" href="#">Landerz<span id="dot_blue">.</span></h3>
     </header>
     <main>
         <article id="home" class="row container-padding">
@@ -62,7 +64,7 @@
                 <p class="text_grey">Lorem ipsum dolor sit amet consectetur adipiscing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
                 <button type="button" class="btn custom_button custom_button_large">Get Started</button>
             </section>
-            <section class="col-md-6 offset-md-2  order-md-2">
+            <section class="col-md-7 offset-md-1 order-md-2">
                 <figure class="figure">
                     <img src="./public/assets/images/landing_1.png" class="figure-img img-fluid rounded"
                         alt="a woman sitting watching a laptop">
@@ -176,7 +178,7 @@
                 </figure>
             </section>
             <section class="col-md-5 offset-md-2">
-                <h4 class="text-left text_font_bold_2 mb-3">Create interactive prototypes</h4>
+                <h4 class="text-left fw-bold mb-3">Create interactive prototypes</h4>
                 <p class="text_grey">Eos cumque optio dolores excepturi rerum temporibus magni recusandae evenit, totam omnis consectectur maxime quibusdam expedita dolorem dolor nobis dicta labore quaeret esse magnam unde, aperiam delectus! At maiores, itaque.</h3>
                 <button type="button" class="btn custom_button custom_button_large my-3">Learn More</button>
             </section>
@@ -205,7 +207,7 @@
             <h1 class="text-center article_title">Get In Touch</h1>
             <section class="section_contact col-8 offset-md-2">
                 <form class="g-3 needs-validation" novalidate>
-                    <h4 class="text-left text_font_bold_2 mb-5">Contact Form</h4>
+                    <h4 class="text-left fw-bold mb-5">Contact Form</h4>
                     <div class="form-group row mb-4">
                         <div class="col">
                             <label for="input_first_name" class="form-label fw-bold">First Name</label>
@@ -240,7 +242,7 @@
             </section>
         </article>
     </main>
-    <footer class="row container-padding">
+    <footer class="row my-5">
         <small class="text-center text_grey">Copyright &copy;2019 All rights reserved</small>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

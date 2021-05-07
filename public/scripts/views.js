@@ -21,7 +21,7 @@ const createTemplate = function (slide, idx) {
                     </figure>
                     <div class="row">
                         <p class="text_grey font_big">${slide.post.body}</p>
-                        <p class="my-0 text_font_bold_2 font_small mb-3">${slide.name}</p>
+                        <p class="my-0 fw-bold font_small mb-3">${slide.name}</p>
                     </div>
                 </div>
             </div>

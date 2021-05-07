@@ -48,6 +48,9 @@ body{
 .icon-check:before {
     content: "\f00c";
 }
+.icon-bars:before {
+    content: "\f0c9";
+}
 
 main article:nth-child(2n+1) {
     background: white;
@@ -71,6 +74,23 @@ form input, textarea{
 #testimonials_contain{
     overflow: visible !important;
 }
+
+#dot_blue{
+    color:#00d3b5;
+}
+
+#button_nav_bar{
+    border:none;
+    color:black
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 .article_title{
     font-family: 'Montserrat', sans-serif;
@@ -111,6 +131,7 @@ form input, textarea{
 
 .container-padding { 
     padding: 8vh 12vw;
+    min-height: 100vh;
 }
 
 .custom_button_large:hover{
@@ -121,10 +142,6 @@ form input, textarea{
     font-size: 0.9em;
     padding: 10px 19px 10px 19px;
     line-height: 1.2;
-}
-
-.custom_link{
-    color:black !important;
 }
 
 .figure_card{
@@ -176,13 +193,12 @@ form input, textarea{
     font-weight: bold;
 }
 
-.text_font_bold_2{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
 .text_grey{
     color:grey;
+}
+
+.text_black{
+    color:black !important;
 }
 
 
