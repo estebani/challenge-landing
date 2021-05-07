@@ -119,6 +119,10 @@ form input, textarea{
     box-shadow: 0px 4px 10px -4px rgba(0,0,0,0.75);
 }
 
+#carousel-testimonials .carousel-caption {
+    position: sticky;
+}
+
 .custom_button{
     border-radius: 25px;
     background-color: #00d3b5;
@@ -148,6 +152,12 @@ form input, textarea{
 
 .figure_card{
     width: 80px;
+    border-radius: 50%!important;
+
+}
+
+.figure_testimonial{
+    width: 120px;
     border-radius: 50%!important;
 
 }

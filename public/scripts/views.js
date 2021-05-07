@@ -12,16 +12,16 @@ const makeSlide = (user, dataPost) => ({
 });
 
 const createTemplate = function (slide, idx) {
-    return `<div class="carousel-item ${idx == 0 ? 'active' : null}" data-bs-interval="4000" >
+    return `<div class="carousel-item ${idx == 0 ? 'active' : null}" data-bs-interval="10000000" >
             <div class="slide_testimonial">
                 <div class="carousel-caption d-md-block">
                     <figure class="figure row ">
                         <img src="${slide.userImage}"
-                            class="figure-img img-fluid rounded figure_card mx-auto" alt="${slide.post.title}">
+                            class="figure-img img-fluid rounded figure_testimonial mx-auto" alt="${slide.post.title}">
                     </figure>
                     <div class="row">
-                        <p class="text_grey font_big">${slide.post.body}</p>
-                        <p class="my-0 fw-bold font_small mb-3">${slide.name}</p>
+                        <p class="text_grey font_big text_grey font_big col-8 offset-2">${slide.post.body}</p>
+                        <p class="my-0 fw-bold font_small mb-3 mb-3">${slide.name}</p>
                     </div>
                 </div>
             </div>
