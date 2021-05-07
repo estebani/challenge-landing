@@ -2,7 +2,7 @@
 
 
 const createTemplate = function (slide, idx) {
-    return `<div class="carousel-item ${idx == 0 ? 'active' : null}" data-bs-interval="10000000" >
+    return `<div class="carousel-item ${idx == 0 ? 'active' : null}" data-bs-interval="4000" >
             <div class="slide_testimonial">
                 <div class="carousel-caption d-md-block">
                     <figure class="figure row ">
